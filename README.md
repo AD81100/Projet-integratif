@@ -1,10 +1,33 @@
-# Projet-integratif
+<img src="https://github.com/AD81100/Projet-integratif/blob/b2f03a83feab625d55e465ea54ef334ea17523c6/logo.png" width="20%"> 
 
-pour 09/11
-powerpoint:
-- un transparent de titre avec le titre de votre projet et les noms des participants du groupe   
-- un transparent présentant de manière synthétique (possiblement illustrée) la thématique globale de votre projet  
-- deux/trois transparents présenteront l'état de l'art/l'existant et votre positionnement par rapport à celui-ci (qu'est-ce que vous proposez de mieux)   
-- un/deux transparents présenteront les sources de données que vous envisagez d'utiliser
-- un/deux transparents présenteront des scénarios d'utilisation envisagés de votre application
-N'hésitez pas à utiliser l'espace dédié à la prise de notes pour développer votre propos. Utilisez les animations nécessaires, les masques de diapositives, la numérotation des transparents etc...
+# Alerte Incendie
+
+### Descriptif 
+
+Le projet « Alerte incendie » sera un site internet permettant d’anticiper les feux de forêts. 
+
+Afin de mener à bien ce projet, nous utiliserons 2 bases de données publiques qui nous permettrons de recenser les incendies ayant eu lieu sur les années précédentes afin d’en tirer des tendances pour le futur. 
+
+Ces bases de données nous permettront de déterminer les causes, les emplacements et les périodes des incendies en France métropolitaine.
+
+A partir de ces données, nous pourrons alors établir un premier niveau d’alerte. 
+
+Nous y ajouterons par la suite, des données métrologiques qui nous permettrons d’établir, à la suite d’un calcul de probabilité, un second niveau d’alerte. 
+
+Ces données météorologiques nous permettrons d’anticiper à J+3 le risque d’incendie. 
+
+Nous couplerons ces niveaux d’alerte et nous les afficherons sur une carte via un code couleur afin d’avertir l’utilisateur de notre site des risques d’incendies dans le secteur qu’il aura choisi. 
+
+### Membre du projet
+
+-  *Chef de projet :* 
+
+ 		Arif Durdu 
+
+-  *Equipe Web :* 
+
+ 		Zhuo Ma | Liu Tiantian 
+
+-  *Equipe Data :* 
+
+ 		Arif Durdu | Iliès Boualem
