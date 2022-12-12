@@ -26,7 +26,7 @@ Nous couplerons ces niveaux d’alerte et nous les afficherons sur une carte via
 
 -  *Equipe Web :* 
 
- 		Zhuo Ma | Tiantian Liu 
+ 		[Zhuo Ma](https://github.com/Anne-Zh) | Tiantian Liu 
 
 -  *Equipe Data :* 
 
