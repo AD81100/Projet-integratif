@@ -26,7 +26,7 @@ Nous couplerons ces niveaux d’alerte et nous les afficherons sur une carte via
 
 -  *Equipe Web :* 
 
- 		Zhuo Ma | Liu Tiantian 
+ 		Zhuo Ma | Tiantian Liu 
 
 -  *Equipe Data :* 
 
