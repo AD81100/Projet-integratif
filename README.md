@@ -1,5 +1,5 @@
 <img src="https://github.com/AD81100/Projet-integratif/blob/b2f03a83feab625d55e465ea54ef334ea17523c6/logo.png" width="20%"> 
-![logo ut1](https://github.com/AD81100/Projet-integratif/blob/c2f423a1325f8a6d8fc18ac8fcba68885120bc34/logo%20uni.jpg =200*200)
+![logo ut1](https://github.com/AD81100/Projet-integratif/blob/c2f423a1325f8a6d8fc18ac8fcba68885120bc34/logo%20uni.jpg =200x200)
 # Alerte Incendie
 
 ### Descriptif 
