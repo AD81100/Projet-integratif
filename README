@@ -1,5 +1,29 @@
-Explication du projet
+Nom du projet : Alerte Incendie.
 
-Nom: Contrôle des risques d’incendie de forêt en France
-Données : Météo; superficie forestière;
+Descriptif :
 
+Le projet « Alerte incendie » sera un site internet permettant d’anticiper les feux de forêts. 
+Afin de mener à bien ce projet, nous utiliserons 2 bases de données publiques qui nous permettrons de recenser les incendies ayant eu lieu sur les années précédentes afin d’en tirer des tendances pour le futur. 
+Ces bases de données nous permettront de déterminer les causes, les emplacements et les périodes des incendies en France métropolitaine.
+A partir de ces données, nous pourrons alors établir un premier niveau d’alerte. 
+Nous y ajouterons par la suite, des données métrologiques qui nous permettrons d’établir, à la suite d’un calcul de probabilité, un second niveau d’alerte. 
+Ces données météorologiques nous permettrons d’anticiper à J+3 le risque d’incendie. 
+Nous couplerons ces niveau d’alerte et nous les afficherons sur une carte via un code couleur afin d’avertir l’utilisateur de notre site des risques d’incendies dans le secteur qu’il aura choisi.  
+
+Membre du projet :
+ 
+ Zhuo Ma | Liu Tiantian | Arif Durdu | Iliès Boualem
+ 
+ Chef de projet :
+ 
+ Arif Durdu
+ 
+ Equipe Web :
+  
+ Zhuo Ma | Liu Tiantian
+ 
+ Equipe Data :
+ 
+  Arif Durdu | Iliès Boualem
+ 
+ 
