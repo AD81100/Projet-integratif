@@ -22,11 +22,11 @@ Nous couplerons ces niveaux d’alerte et nous les afficherons sur une carte via
 
 -  *Chef de projet :* 
 
- 		Arif Durdu 
+ 		Arif Durdu
 
 -  *Equipe Web :* 
 
- 		[Zhuo Ma](https://github.com/Anne-Zh) | Tiantian Liu 
+ 		Zhuo Ma | Tiantian Liu 
 
 -  *Equipe Data :* 
 
