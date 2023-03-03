@@ -1,0 +1,40 @@
+CREATE TABLE Etat_DFCI (
+  idEtat INT NOT NULL PRIMARY KEY,
+  nivChaleur DECIMAL(5,2) NOT NULL CHECK (nivChaleur BETWEEN 0 AND 100),
+  nivHumidite DECIMAL(5,2) NOT NULL CHECK (nivHumidite BETWEEN 0 AND 100),
+  nivVent DECIMAL(5,2) NOT NULL CHECK (nivVent BETWEEN 0 AND 100),
+  dateEtat DATE NOT NULL,
+  nivAlerte VARCHAR(50) NOT NULL
+  CONSTRAINT FK_Etat_DFCI_DFCI FOREIGN KEY (codeDFCI) REFERENCES DFCI(codeDFCI)
+
+);
+
+CREATE TABLE DFCI (
+  codeDFCI VARCHAR(50) NOT NULL PRIMARY KEY,
+  nomDFCI VARCHAR(50) NOT NULL,
+  nomSecteur VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE Incendie (
+  numIncendie INT NOT NULL PRIMARY KEY,
+  typeIncendie VARCHAR(50) NOT NULL,
+  Surface DECIMAL(10,2) NOT NULL CHECK (Surface > 0),
+  dateIncendie DATE NOT NULL,
+  codeDFCI VARCHAR(50) NOT NULL,
+  CONSTRAINT FK_Incendie_DFCI FOREIGN KEY (codeDFCI) REFERENCES DFCI(codeDFCI)
+);
+
+CREATE TABLE Cause (
+  numCause INT NOT NULL PRIMARY KEY,
+  nomCause VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE Provoquer (
+  numIncendie INT NOT NULL,
+  numCause INT NOT NULL,
+  PRIMARY KEY (numIncendie, numCause),
+  CONSTRAINT FK_Provoquer_Incendie FOREIGN KEY (numIncendie) REFERENCES Incendie(numIncendie),
+  CONSTRAINT FK_Provoquer_Cause FOREIGN KEY (numCause) REFERENCES Cause(numCause)
+);
+
+
