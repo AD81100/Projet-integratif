@@ -1,0 +1,52 @@
+<!doctype html>
+
+<html>
+
+<head>
+  {% block head %}
+  <title>Alerte Incendie</title>
+  <link rel="stylesheet" href="./static/style.css">
+  <link rel="shortcut icon" href="./static/img/logo.png" />
+
+
+  
+</head>
+{% endblock %}
+<body>
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+            <div class="nav-title">
+                Alerte Incendie
+            </div>
+        </div>
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Accueil</a>
+            <a href="france.html">Prévision</a>
+            <a href="information.html">Information</a>
+            <a href="contact.html">Contact</a>
+
+        </div>
+    </div>
+
+  <div id="content">
+    {% block content %}{% endblock %}
+  </div>
+
+
+  <div id="footer">
+    {% block footer %}
+
+    {% endblock %}
+  </div>
+</body>
+
+</html>

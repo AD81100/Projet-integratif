@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="11.35557mm"
+   height="24.416828mm"
+   viewBox="0 0 11.35557 24.416828"
+   version="1.1"
+   id="svg385"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="corse.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview387"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="4.051698"
+     inkscape:cx="22.212909"
+     inkscape:cy="58.617399"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs382" />
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-123.61321,-137.76918)">
+    <path
+       id="FR-2A"
+       title="Corse-du-Sud"
+       class="land"
+       d="m 124.07575,147.22161 2.17223,0.82815 1.00013,-0.0794 0.48947,1.12977 1.53459,0.68528 1.27264,2.69345 0.66675,-0.0397 0.11377,2.62202 0.92869,0.254 0.93663,-0.39688 v 0 l -0.14817,2.96598 -0.37571,0.58738 -0.51064,-0.17198 -0.23548,0.77258 0.34925,-0.42598 0.56091,0.15611 -1.04775,0.93397 0.0529,0.96838 -0.68262,0.80169 0.54239,-0.2249 -0.56356,0.82815 -1.31763,-0.36248 0.22755,-0.68527 -0.52917,-0.37307 -2.46856,-0.762 0.0264,-0.42068 -0.63764,-0.13759 -0.0185,-0.91545 1.43139,-1.01336 -1.47637,-0.17727 -0.0741,-0.6059 -1.2753,0.0106 0.78846,-0.52917 -0.20373,-0.37835 0.65617,-0.13759 0.34396,-1.23295 -0.60325,-0.55828 -1.54252,0.58209 -0.16669,-1.0504 0.79375,-0.18521 -0.0503,-0.51329 0.95779,-0.54769 -0.52123,-0.92339 -0.44714,0.17462 -1.11919,-0.6641 0.39423,-0.33338 -0.58738,-1.02393 1.68011,-0.45773 -0.97367,-0.55034 0.0397,-0.65616 -0.60854,0.23812 z"
+       style="fill:#cccccc;fill-opacity:1;stroke:#ffffff;stroke-width:0.132292;stroke-opacity:1" />
+    <path
+       id="FR-2B"
+       title="Haute-Corse"
+       class="land"
+       d="m 133.41554,137.84213 0.4445,0.37307 0.32279,2.70404 -0.51858,1.96056 0.9525,1.86796 0.28575,5.22552 -0.0979,1.34408 -1.51342,2.2225 -0.10319,1.38113 v 0 l -0.93662,0.39687 -0.92869,-0.254 -0.11377,-2.62202 -0.66675,0.0397 -1.27265,-2.69346 -1.53458,-0.68527 -0.48948,-1.12977 -1.00013,0.0794 -2.17222,-0.82814 v 0 l 0.91545,-0.53446 0.11113,-1.46579 0.59002,-0.14288 -0.11906,-0.76464 0.85196,0.27516 0.16668,-0.65881 2.34157,-0.57679 1.20385,-1.34408 1.06627,-0.0556 0.84402,0.87313 0.50536,-0.88371 -0.38894,-1.44727 0.5371,-1.38112 -0.20108,-1.02394 z"
+       style="fill:#cccccc;fill-opacity:1;stroke:#ffffff;stroke-width:0.132292;stroke-opacity:1" />
+  </g>
+</svg>

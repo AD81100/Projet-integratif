@@ -1,0 +1,180 @@
+{% extends "layout.html" %}
+{% block content %}
+
+
+<h2>GRAPHIQUE EN BREF</h2>
+
+<style>
+    .container {
+        display: flex;
+        justify-content: center;
+        height: 500px;
+    }
+
+    .graphs {
+        margin: 20px;
+        height: 500px;
+    }
+
+
+    .camembert,
+    .courbe {
+        display: inline-block;
+        margin: 0 20px;
+        height: 500px;
+    }
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<div class="container">
+
+    <div class="graphs">
+        <div class="camembert">
+
+            <canvas id="myChart" width="400" height="400"></canvas>
+
+            <script>
+                // Données pour le camembert
+                var data = {
+                    labels: ['Zone sud-est', 'Zone corse', 'Zone sud-ouest', 'Zone est'],
+                    datasets: [{
+                        data: [21300, 8506, 4653, 167],
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.8)',
+                            'rgba(54, 162, 235, 0.8)',
+                            'rgba(255, 206, 86, 0.8)',
+                            'rgba(75, 192, 192, 0.8)'
+                        ]
+                    }]
+                };
+
+                // Options du camembert
+                var options = {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    legend: {
+                        position: 'bottom'
+                    },
+                };
+
+                // Créer le camembert
+                var ctx = document.getElementById('myChart').getContext('2d');
+                var myChart = new Chart(ctx, {
+                    type: 'pie',
+                    data: data,
+                    options: options
+                });
+
+            </script>
+            <span>Répartition des feux de forêts entre 2018 et 2021 par zone</span>
+        </div>
+
+
+        <div class="courbe">
+            <canvas id="courbe" width="400" height="400"></canvas>
+
+            <script>
+                // Données pour la courbe
+                var data = {
+                    labels: [2018, 2019, 2020, 2021],
+                    datasets: [{
+                        label: "Variation du nombre d'incendies entre 2018 et 2021 en France",
+                        data: [1315, 2289, 1730, 1858],
+                        borderColor: 'rgba(255, 99, 132, 1)',
+                        borderWidth: 2,
+                        pointBackgroundColor: 'rgba(255, 99, 132, 1)',
+                        pointRadius: 5
+                    }]
+                };
+
+                // Options de la courbe
+                var options = {
+                    responsive: false,
+                    maintainAspectRatio: false,
+                    scales: {
+                        xAxes: [{
+                            display: true,
+                            scaleLabel: {
+                                display: true,
+                                labelString: 'Année'
+                            },
+                            ticks: {
+                                stepSize: 1
+                            }
+                        }],
+                        yAxes: [{
+                            display: true,
+                            scaleLabel: {
+                                display: true,
+                                labelString: "Variation du nombre d'incendies entre 2018 et 2021 en France"
+                            },
+                            ticks: {
+                                min: 0,
+                                max: 3000,
+                                stepSize: 500
+                            }
+                        }]
+                    }
+                };
+
+                // Créer la courbe
+                var ctx = document.getElementById('courbe').getContext('2d');
+                var courbe = new Chart(ctx, {
+                    type: 'line',
+                    data: data,
+                    options: options
+                });
+            </script>
+
+            <span>Variation du nombre de feux de forêts entre 2018 et 2021 en France</span>
+
+        </div>
+    </div>
+</div>
+
+<br><br><br>
+
+
+<h2>INFORMATIONS PRATIQUES</h2>
+
+<h4>Précautions à prendre en forêt ou proximité immédiate</h4>
+<ul>
+    <li>Se renseigner sur les conditions météorologiques avant de se rendre en forêt ;</li>
+    <li>Avoir un téléphone portable sur soi pour alerter les secours en cas de besoin ;</li>
+    <li>Prévenir ses proches de l’itinéraire emprunté ;</li>
+    <li>Respecter les chemins balisés ;</li>
+    <li>Ne jamais allumer de feu en forêt, dans les bois ou à proximité, même s’il s’agit d’un barbecue ;</li>
+    <li>Ne jamais jeter de mégots de cigarette dans une zone boisée ou par la fenêtre de la voiture ;</li>
+    <li>Prendre garde à l’endroit où est stationnée la voiture : le pot d’échappement à haute température peut
+        enflammer
+        l’herbe sèche ;</li>
+    <li>Veiller à camper dans un lieu autorisé, sécurisé et protégé ;</li>
+    <li>Respecter les interdictions d’accès aux zones boisées.</li>
+</ul>
+
+<h4>Habitation proche des forêt</h4>
+<p>Les habitations situées en forêt font l’objet d’une réglementation spécifique stricte.
+    Se renseigner auprès de la mairie et du centre de secours le plus proche pour connaître toutes les
+    réglementations à
+    respecter.</p>
+
+<ul>
+    <li>Obligation de débroussailler les abords des lieux d’habitation situé en forêt ou à proximité. Le
+        non-respect
+        de
+        cette obligation peut entraîner une contravention pouvant atteindre 1.500 euros ;</li>
+    <li>Ne pas mettre des gouttières en plastiques ;</li>
+    <li>Ne pas stocker à proximité immédiate de la maison le bois, le fuel et le butane ;</li>
+    <li>En cas de feu et s’il y a une piscine dans la propriété, la mettre à disposition des sapeurs-pompiers ;
+    </li>
+    <li>Ne pas planter de végétaux trop proche de la maison. Eviter de planter des chênes Kermès, des cyprès,
+        des
+        mimosas, des eucalyptus, des végétaux épineux et des conifères, ce sont des plantes très inflammables ;
+    </li>
+    <li>Couper les branches des arbres pour qu’elles soient à plus de 3 mètres de la façade ;</li>
+    <li>Ne rien brûler entre avril et septembre.</li>
+</ul>
+
+
+{% endblock %}
