@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<h2>CONTACTEZ-NOUS</h2>
+
+
+<div class="beau_form">
+  <form action="/confirmation.html" method="POST">
+    <label for="prenom">Prénom :</label><br>
+    <input type="text" id="prenom" name="prenom"><br>
+
+    <label for="nom">Nom :</label><br>
+    <input type="text" id="nom" name="nom"><br>
+
+    <label for="email">Email :</label><br>
+    <input type="email" id="email" name="email"><br>
+
+    <label for="telephone">Téléphone :</label><br>
+    <input type="tel" id="telephone" name="telephone"><br>
+
+    <label for="objet">Objet :</label><br>
+    <input type="text" id="objet" name="objet"><br>
+
+    <label for="message">Votre message :</label><br>
+    <textarea id="message" name="message"></textarea><br>
+
+    <input type="submit" value="Envoyer">
+
+  </form>
+</div>
+
+
+  
+
+
+
+
+{% endblock %}

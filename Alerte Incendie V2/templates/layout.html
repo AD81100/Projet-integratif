@@ -1,0 +1,66 @@
+<!doctype html>
+
+<html>
+
+{% block head %}
+
+<head>
+  <title>Alerte Incendie</title>
+  <link rel="stylesheet" href="./static/style.css">
+  <link rel="shortcut icon" href="./static/img/logo.png" />
+  <meta charset="UTF-8">
+</head>
+{% endblock %}
+
+
+<header>
+
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+            <div class="nav-title">
+                Alerte Incendie
+            </div>
+        </div>
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Accueil</a>
+            <a href="france.html">Prévision</a>
+            <a href="information.html">Information</a>
+            <a href="contact.html">Contact</a>
+
+        </div>
+    </div>
+</header>
+<br><br>
+
+<body>
+
+    {% block content %}
+    {% endblock %}
+</body>
+
+{% block footer %}
+<footer>    <hr>
+
+<div class="foot-left">
+    <img src="/static/img/logo.png">
+</div>
+<div class="foot">
+    <p>Iliès Boualem | Zhuo Ma | Tiantian Liu | Arif Durdu</p>
+    <p>&copy; Alerte Incendie | 2023</p>
+</div>
+<div class="foot-right">
+    <img src="/static/img/ut1.png">
+</div>
+</footer>
+{% endblock %}
+
+</html>

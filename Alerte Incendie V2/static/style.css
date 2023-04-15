@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+.nav {
+  height: 50px;
+  width: 100%;
+  position: relative;
+  padding: 0;
+  font-family: 'Montserrat';
+
+}
+
+.nav>.nav-header {
+  display: inline;
+}
+
+.nav>.nav-header>.nav-title {
+  display: inline-block;
+  font-size: 35px;
+  color: black;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav>.nav-btn {
+  display: none;
+}
+
+.nav>.nav-links {
+  display: inline;
+  float: right;
+  font-size: 22px;
+}
+
+.nav>.nav-links>a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.nav>.nav-links>a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav>#nav-check {
+  display: none;
+}
+
+@media (max-width:1300px) {
+  .nav>.nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+
+  .nav>.nav-btn>label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+
+  .nav>.nav-btn>label:hover,
+  .nav #nav-check:checked~.nav-btn>label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .nav>.nav-btn>label>span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid black;
+  }
+
+  .nav>.nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: grey;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+
+  }
+
+  .nav>.nav-links>a {
+    display: block;
+    width: 100%;
+  }
+
+  .nav>#nav-check:not(:checked)~.nav-links {
+    height: 0px;
+  }
+
+  .nav>#nav-check:checked~.nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+
+body{
+  background-image: url(/static/img/1600w-_Tcjok-d9b4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1{
+  font-family: 'Montserrat';
+  font-size: 45px;
+  padding: 20px 20px 20px 20px;
+  text-align: center;
+  color: black;
+}
+
+h2{
+  font-family: 'Montserrat';
+  font-size: 35px;
+  padding: 20px 20px 20px 20px;
+  text-align: center;
+  color: black;
+}
+
+h4{
+  font-family: 'Montserrat';
+  font-size: 15px;
+  padding: 20px 20px 20px 20px;
+
+  color: black;
+}
+
+
+p{
+  text-align: center;
+  padding: 20px 20px 20px 20px;
+  font-family: "Montserrat";
+  color: #333;
+  font-size: 21px;
+}
+
+hr{
+  width: 200px;
+}
+
+label{
+  font-family: 'Montserrat';
+}
+
+ul{
+  font-family: 'Montserrat';
+}
+
+input[type=text],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=email],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=number],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=date],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=tel],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+.beau_form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+
+.map_image {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.land {
+  stroke: white;
+  stroke-width: 1px;
+  transition: fill 0.3;
+  fill: grey;
+}
+
+
+.foret {
+  fill: green;
+  stroke: white;
+  stroke-width: 1px;
+  transition: fill 0.3;
+}
+
+
+.foret:hover {
+  fill: blue;
+}
+
+
+.map_image_aquitaine {
+  width: 30%;
+  display: block;
+  margin: 0 auto;
+}
+
+.aquitaine {
+  fill: grey;
+}
+
+.map_image_occitanie {
+  width: 45%;
+  display: block;
+  margin: 0 auto;
+}
+
+.occitanie {
+  fill: grey;
+}
+
+
+.map_image_paca {
+  width: 40%;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.paca {
+  fill: grey;
+}
+
+.map_image_corse {
+  width: 13%;
+  display: block;
+  margin: 0 auto;
+}
+
+.corse {
+  fill: grey;
+}
+
+.map_image_bourgogne {
+  width: 35%;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.bourgogn {
+  fill: grey;
+}
+
+
+
+.tooltip {
+  position: absolute;
+  padding: 15px 10px;
+  border-radius: 4px;
+  font-family: monospace;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+
+footer{
+  text-align: center;
+}
+footer > div {
+  display: inline-block;
+ 
+}
+.foot > p{
+  text-align: center;
+}
+
+.foot-left > img{
+  text-align: left;
+  width: 100px;
+  height: 100px;
+}
+.foot-right > img{
+  padding-left: 10px;
+  text-align: right;
+  width: 100px;
+  height: 100px;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+}
+
+.graph-titre{
+  font-family: 'Montserrat';
+  font-size: 15px;
+}
+
+.level{
+  text-align: center;
+}
+
+.level span{
+  font-family: 'Montserrat';
+  font-size: 20px;
+  color: white;
+
+}
+
